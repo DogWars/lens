@@ -1,3 +1,10 @@
+4.19 [????.??.??]
+-----------------
+* Support building with GHC 8.10.
+* The types of `_TupE` and `_UnboxedTupE` are now `Prism' Exp [Maybe Exp]`
+  when built against `template-haskell-2.16` or later to reflect the new
+  types of `TupE` and `UnboxedTupE`.
+
 4.18.1 [2019.09.13]
 -------------------
 * Remove the use of `cpp-options: -traditional`. This should be unnecessary
